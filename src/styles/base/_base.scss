@@ -1,0 +1,109 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-family: 'LunchType-Regular'
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    font-family: 'LunchType-Medium', sans-serif;
+}
+
+h1, .h1 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+h2, .h2 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+    font-size: 28px;
+    line-height: 1;
+}
+
+p {
+
+}
+
+a {
+
+}
+
+// Helper classes 
+.blend-difference {
+    mix-blend-mode: difference;
+}
+
+.bg-default {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+// Animations 
+.appear--FadeIn {
+    opacity: 0;
+    animation: fadeIn 1s .5s forwards;
+}
+
+.appear--SlideIn {
+    opacity: 0;
+    animation: slideIn 2s 1s forwards
+}
+
+.marquee--Slide {
+    transform: translateX(0);
+    // animation: name duration ease delay iteration-count fill-mode
+    animation: marqueeSlide 200s ease infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes marqueeSlide {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-300vw)
+    }
+}

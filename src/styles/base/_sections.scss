@@ -1,0 +1,90 @@
+section {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.container {
+    width: 100%; // Ultimate width
+    max-width: 810px; // max-width to constrain it, set within 100s for proper centering
+    margin: auto; // Sets the top/bottom and left/right to auto which centers vertically and horizontally, set parent to flex container
+}
+
+.fifty-section {
+    &--intro {
+        background-image: url('/assets/images/intro.jpg');
+        color: white;
+        .logo {
+            display: block;
+            max-width: 112px;
+            margin: 0 auto;
+            margin-bottom: 32px;
+            img {
+                width: 100%;
+            }
+        }
+        .headline-text {
+            font-family: 'LunchType-Regular', sans-serif;
+            font-weight: 400;
+        }
+    }
+    &--days {
+        overflow: hidden;
+        .container {
+            text-align: center;
+        }
+        &__day-text {
+            font-size: 28px;
+            color: #FFEECF;
+            margin-bottom: 48px;
+            line-height: 1;
+        }
+        &__artist {
+            font-size: 56px;
+            line-height: 1;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        ul {
+            list-style: none;
+            & > li {
+                margin-bottom: 24px;
+            }
+        }
+
+        // Individual background colors
+        &.day1 {background-color: #FD76A7;}
+        &.day2 {background-color: #1BB190;}
+        &.day3 {background-image: url('/assets/images/day-3.jpg')}
+    }
+}
+
+.marquee {
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    font-size: 5vw;
+    line-height: 1.2;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'LunchType-Medium', sans-serif;
+    span {
+        white-space: nowrap;
+        display: block;
+    }
+}
+
+.down-chevron {
+    display: block;
+    max-width: 64px;
+    height: 32px;
+    position: absolute;
+    bottom: 30px;
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

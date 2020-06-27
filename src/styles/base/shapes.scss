@@ -1,0 +1,94 @@
+.shape {
+    position: absolute;
+    &.circle {
+        width: 93px;
+        height: 93px;
+        border-radius: 100%;
+        background-color: #ffeecf;
+    
+        &:nth-of-type(1) {
+            left: 5%;
+            top: 20%;
+          }
+          
+          &:nth-of-type(2) {
+            left: 20%;
+            top: 5%;
+          }
+          
+          &:nth-of-type(3) {
+            left: 20%;
+            top: 50%;
+          }
+          
+          &:nth-of-type(4) {
+            left: 4%;
+            top: 80%;
+          }
+          
+          &:nth-of-type(5) {
+            left: 70%;
+            top: 5%;
+          }
+          
+          &:nth-of-type(6) {
+            left: 75%;
+            top: 55%;
+          }
+          
+          &:nth-of-type(7) {
+            left: 85%;
+            top: 30%;
+          }
+          
+          &:nth-of-type(8) {
+            left: 80%;
+            top: 80%;
+          }
+    }
+    &.squiggle {
+        width: 303px;
+        height: 63px;
+        background-image: url('/assets/images/squiggle.svg');
+
+        &:nth-of-type(1) {
+            left: 5%;
+            top: 2%;
+          }
+          
+          &:nth-of-type(2) {
+            left: 8%;
+            top: 25%;
+          }
+          
+          &:nth-of-type(3) {
+            left: 3%;
+            top: 60%;
+          }
+          
+          &:nth-of-type(4) {
+            left: 10%;
+            top: 90%;
+          }
+          
+          &:nth-of-type(5) {
+            right: 10%;
+            top: 7%;
+          }
+          
+          &:nth-of-type(6) {
+            right: 2%;
+            top: 35%;
+          }
+          
+          &:nth-of-type(7) {
+            right: 9%;
+            top: 60%;
+          }
+          
+          &:nth-of-type(8) {
+            right: 0%;
+            bottom: 5%;
+          }
+    }
+}
