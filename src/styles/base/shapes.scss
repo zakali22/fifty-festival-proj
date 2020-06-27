@@ -1,8 +1,9 @@
 .shape {
     position: absolute;
+    z-index: 1;
     &.circle {
-        width: 93px;
-        height: 93px;
+        width: 9.3rem;
+        height: 9.3rem;
         border-radius: 100%;
         background-color: #ffeecf;
     
@@ -47,8 +48,8 @@
           }
     }
     &.squiggle {
-        width: 303px;
-        height: 63px;
+        width: 30.3rem;
+        height: 6.3rem;
         background-image: url('/assets/images/squiggle.svg');
 
         &:nth-of-type(1) {

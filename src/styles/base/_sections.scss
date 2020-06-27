@@ -6,7 +6,7 @@ section {
 
 .container {
     width: 100%; // Ultimate width
-    max-width: 810px; // max-width to constrain it, set within 100s for proper centering
+    max-width: 81.0rem; // max-width to constrain it, set within 100s for proper centering
     margin: auto; // Sets the top/bottom and left/right to auto which centers vertically and horizontally, set parent to flex container
 }
 
@@ -16,9 +16,9 @@ section {
         color: white;
         .logo {
             display: block;
-            max-width: 112px;
+            max-width: 11.2rem;
             margin: 0 auto;
-            margin-bottom: 32px;
+            margin-bottom: 3.2rem;
             img {
                 width: 100%;
             }
@@ -32,23 +32,27 @@ section {
         overflow: hidden;
         .container {
             text-align: center;
+            z-index: 2;
         }
         &__day-text {
-            font-size: 28px;
+            font-size: 2.8rem;
             color: #FFEECF;
-            margin-bottom: 48px;
+            margin-bottom: 4.8rem;
             line-height: 1;
+            @media(max-width: 40.0rem){
+                color: black;
+            }
         }
         &__artist {
-            font-size: 56px;
+            font-size: 5.6rem;
             line-height: 1;
-            margin-bottom: 6px;
+            margin-bottom: 0.6rem;
             font-weight: 500;
         }
         ul {
             list-style: none;
             & > li {
-                margin-bottom: 24px;
+                margin-bottom: 2.4rem;
             }
         }
 
@@ -76,10 +80,10 @@ section {
 
 .down-chevron {
     display: block;
-    max-width: 64px;
-    height: 32px;
+    max-width: 6.4rem;
+    height: 3.2rem;
     position: absolute;
-    bottom: 30px;
+    bottom: 3rem;
     /* margin: 0 auto; */
     left: 50%;
     transform: translate(-50%, -50%);
