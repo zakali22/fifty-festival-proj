@@ -1,7 +1,8 @@
 import "../styles/index.scss"
-import {marquee} from "./animations"
+import {marquee, pulsateAnimDelay} from "./animations"
 
 marquee();
+pulsateAnimDelay();
 
 // Randomly position shapes 
 console.log("Running index")

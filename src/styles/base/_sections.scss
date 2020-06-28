@@ -8,6 +8,9 @@ section {
     width: 100%; // Ultimate width
     max-width: 81.0rem; // max-width to constrain it, set within 100s for proper centering
     margin: auto; // Sets the top/bottom and left/right to auto which centers vertically and horizontally, set parent to flex container
+    @media(max-width: 991px){
+        padding: 0 5rem;
+    }
 }
 
 .fifty-section {
@@ -48,6 +51,13 @@ section {
             line-height: 1;
             margin-bottom: 0.6rem;
             font-weight: 500;
+            @media(max-width: 767px){
+                font-size: 4.4rem;
+            }
+            @media(max-width: 530px){
+                font-size: 3.88rem;
+                line-height: 1.2;
+            }
         }
         ul {
             list-style: none;

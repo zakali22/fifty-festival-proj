@@ -13,12 +13,15 @@ const marquee = () => {
     console.log(marqueeElement)
 }
 
-const squiggle = () => {
-
+const pulsateAnimDelay = () => {
+    const circles = document.querySelectorAll('.circle')
+    circles.forEach((circle, index) => {
+        circle.style.animationDelay = `${index+1}00ms`
+    })
 }
 
 export {
     marquee,
-    squiggle
+    pulsateAnimDelay
 }
 

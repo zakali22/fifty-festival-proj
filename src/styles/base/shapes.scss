@@ -6,7 +6,7 @@
         height: 9.3rem;
         border-radius: 100%;
         background-color: #ffeecf;
-    
+
         &:nth-of-type(1) {
             left: 5%;
             top: 20%;
@@ -40,17 +40,28 @@
           &:nth-of-type(7) {
             left: 85%;
             top: 30%;
+            @media(max-width: 500px){
+              left: 67%;
+            }
           }
           
           &:nth-of-type(8) {
             left: 80%;
             top: 80%;
+            @media(max-width: 500px){
+              left: 70%;
+            }
           }
     }
     &.squiggle {
         width: 30.3rem;
         height: 6.3rem;
         background-image: url('/assets/images/squiggle.svg');
+
+        @media(max-width: 500px){
+          width: 25rem;
+          height: 5rem;
+        }
 
         &:nth-of-type(1) {
             left: 5%;
