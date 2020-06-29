@@ -71,6 +71,114 @@ section {
         &.day2 {background-color: #1BB190;}
         &.day3 {background-image: url('/assets/images/day-3.jpg')}
     }
+    &--footer {
+        flex-direction: column;
+        .container {
+            font-family: 'LunchType-Medium', sans-serif;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            @media(max-width: 991px){
+                padding: 10rem 0;
+            }
+        }
+        &__top {
+            display: flex;
+            height: 65vh;
+            background: #FFEED1;
+            .eye-open {
+                position: absolute;
+                background-image: url('/assets/images/eyes_open.svg');
+                width: 108px;
+                height: 32px;
+                top: 0;
+                left: 0;
+                @media(max-width: 991px){
+                    top: 9rem;
+                    left: 9rem;
+                }
+            }
+            .ok-hand {
+                position: absolute;
+                background-image: url('/assets/images/ok_hand.svg');
+                width: 57px;
+                height: 89px;
+                bottom: 0;
+                right: 0;
+                @media(max-width: 991px){
+                    bottom: 5rem;
+                    right: 7rem;
+                }
+            }
+            .form-container {
+                width: 100%;
+                max-width: 76%;
+                margin: 5rem auto;
+                padding: 0 12rem;
+                @media(max-width: 991px){
+                    padding: 0;
+                }
+            }
+            h1 {
+                margin-bottom: 48px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                @media(max-width: 817px){
+                    font-size: 3.2rem;
+                }
+                @media(max-width: 610px){
+                    font-size: 2.7rem;
+                }
+            }
+            form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid #00B290;
+                font-size: 2.1rem;
+                input {
+                    border: none;
+                    background: none;
+                    padding: 10px 0;
+                    flex: 1 0 auto;
+                    margin-right: 8px;
+                    font-size: inherit;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    background: none;
+                    border: none;
+                    margin-bottom: 0.8rem;
+                    font-size: inherit;
+                    font-weight: 500;
+                    font-family: 'LunchType-Medium', sans-serif;
+                    &:hover, &:focus {
+                        outline: none
+                    }
+                    &:active, &:link {
+                        outline: none;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            display: flex;
+            height: 35vh;
+            background: #111118;
+            .container {
+                align-items: center
+            }
+        }
+    }
+}
+
+.section-padding {
+    @media(min-width: 992px){
+        padding: 0 5vw
+    }
 }
 
 .marquee {

@@ -6,7 +6,7 @@
     <title>FIFTY Festival</title>
 </head>
 <body class="fifty">
-    <section class="section fifty-section--intro bg-default" id="intro">
+    <section class="section fifty-section--intro bg-default section-padding" id="intro">
         <div class="container fifty__copy--container">
             <a href="#" class="logo appear--SlideIn">
                 <img src="/assets/images/logo.svg" alt="Logo"/>
@@ -16,11 +16,11 @@
             </div>
             <p class="h2 headline-text appear--SlideIn blend-difference">Held in the beautiful San Bernadino, CA, the first annual FIFTY Music Festival is an unmissable event. Over the course of 3 days, we invite the rising stars in music from 50 different countries all over the world for a unique, cultural extravaganza.</p>
         </div>
-        <a href="#day1" class="down-chevron appear--FadeIn">
+        <a href="#day1" class="down-chevron appear--FadeIn js-scrollto">
             <img src="/assets/images/down-arrow-light.svg" alt="Down arrow" />
         </a>
     </section>
-    <section class="section fifty-section--days day1" id="day1">
+    <section class="section fifty-section--days day1 section-padding" id="day1">
         <div class="container">
             <p class="h4 fifty-section--days__day-text">Friday Nov 10</p>
             <ul>
@@ -53,11 +53,11 @@
         <span class="shape circle"></span>
         <span class="shape circle"></span>
         <span class="shape circle"></span>
-        <a href="#day2" class="down-chevron">
+        <a href="#day2" class="down-chevron js-scrollto">
             <img src="/assets/images/down-arrow.svg" alt="Down arrow" />
         </a>
     </section>
-    <section class="section fifty-section--days day2" id="day2">
+    <section class="section fifty-section--days day2 section-padding" id="day2">
         <div class="container">
             <p class="h4 fifty-section--days__day-text">Saturday Nov 11</p>
             <ul>
@@ -90,11 +90,11 @@
         <span class="shape squiggle bg-default"></span>
         <span class="shape squiggle bg-default"></span>
         <span class="shape squiggle bg-default"></span>
-        <a href="#day3" class="down-chevron">
+        <a href="#day3" class="down-chevron js-scrollto">
             <img src="/assets/images/down-arrow.svg" alt="Down arrow" />
         </a>
     </section>
-    <section class="section fifty-section--days day3 bg-default" id="day3">
+    <section class="section fifty-section--days day3 bg-default section-padding" id="day3">
         <div class="container">
             <p class="h4 fifty-section--days__day-text">Sunday Nov 12</p>
             <ul>
@@ -119,26 +119,33 @@
                 </li>
             </ul>
         </div>
-        <a href="#footer" class="down-chevron">
+        <a href="#footer" class="down-chevron js-scrollto">
             <img src="/assets/images/down-arrow.svg" alt="Down arrow" />
         </a>
     </section>
     <section class="section fifty-section--footer" id="footer">
-        <div class="container">
-            <div class="fifty-section--footer--top">
-                <h1>Register for festival updates</h1>
-                <form>
-                    <input name="email" type="email" type="email" />
-                    <button>Submit</button>
-                </form>
+        <div class="fifty-section--footer__top  section-padding">
+            <div class="container">
+                <div class="eye-open bg-default"></div>
+                <div class="form-container">
+                    <h1>Register for festival updates</h1>
+                    <form>
+                        <input name="email" type="email" type="email" placeholder="Enter your email"/>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <div class="ok-hand bg-default"></div>
             </div>
-            <div class="fifty-section--footer--bottom">
+        </div>
+        <div class="fifty-section--footer__bottom  section-padding">
+            <div class="container">
                 <img src="/assets/images/logo.svg" alt="Logo" />
-                <a href="#intro">
+                <a href="#intro" class="js-scrollto">
                     <p>Back to top</p>
                 </a>
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
 </body>
 </html>
