@@ -1,2 +1,2 @@
 # FIFTY Festival remake
-## A project from SuperHi
+A simple project to practice CSS/Vanilla JS (Part 1)
